@@ -1,0 +1,2983 @@
+# Where each file in assets/ and vendor/ came from, one entry per file. The field names are the
+# provenance record's, so the entries carry over when the game grows.
+# - path: assets/hit.wav      # relative to this game's folder
+#   origin: ai                # ai | bought | cc0 | you | outsourced | template | plugin | licensed | code | unknown
+#   tool: "what made or fetched it: the generator, or the script for code"
+#   model: "the model ID, when a model made it or an AI wrote its code"
+#   source: {vendor: "who made or sold it", product: "its name", url: "where from"}   # a download
+#   licence: {id: CC0-1.0}    # a download: the SPDX id where one exists
+#   date: 2026-01-31
+#   ships: true               # false for a file only the build uses
+#   placeholder: true         # until it is replaced; leave the line out otherwise
+- path: assets/voice-you/*.m4a
+  origin: you
+  tool: "studio.html + record-server.py: your recordings, afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice-you/clips-you.js
+  origin: code
+  tool: "record-server.py"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice-ai/*.m4a
+  origin: ai
+  tool: "make-ai-voice.mjs: OpenAI text-to-speech, voice ballad, cartoon style; afconvert to AAC"
+  model: "gpt-4o-mini-tts"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice-ai/clips-ai.js
+  origin: code
+  tool: "make-ai-voice.mjs"
+  date: 2026-11-17
+  ships: true
+# ---- voice (make-voice.mjs) ----
+- path: assets/voice/hi-let-s-learn-new-words.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/let-s-play-memory.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/all-done-great-job.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-found-it-well-done.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/yes-well-done.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/let-s-look-at-your-album.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-all-of-them-hooray.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/let-s-go-pip.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bye-bye-see-you-next-time.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/look.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-new-story.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-shall-we-go.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/not-yet-first-the-station-before.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/choo-choo.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-new-station-is-open.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-road.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/car.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-car-goes-vroom.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-car.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-car.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-car.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/we-ride-the-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-big-truck-carries-boxes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-plane-flies-in-the-sky.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-boat-floats-on-the-water.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-ride-my-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-car.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-car.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-drive-the-car-vroom.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/drive-the-car-vroom.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-get-on-the-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/get-on-the-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-beep-beep-big-truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/beep-beep-big-truck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-fly-the-plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/fly-the-plane.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-sail-the-boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/sail-the-boat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-ride-the-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/ride-the-bike.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/my-bedroom.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-sleep-in-my-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/teddy.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-hug-my-teddy.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-teddy.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-teddy.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-teddy.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/ball.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-kick-the-ball.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-ball.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-ball.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-ball.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-build-a-tower-with-blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-are-the-blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/drum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/boom-boom-i-play-the-drum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-drum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-drum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-drum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/balloon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-balloon-goes-up-up-up.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-balloon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-balloon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-balloon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-put-on-my-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-put-on-my-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-are-the-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/sock.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-sock-goes-on-my-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-sock.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-sock.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-sock.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-moon-comes-out-at-night.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/look-at-the-star-in-the-sky.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/time-to-sleep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-time-to-sleep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-time-to-sleep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/show-me-time-to-sleep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-it-time-to-sleep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-teddy.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-teddy.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-ball.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-ball.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-drum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-drum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-balloon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-balloon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-sock.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-sock.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-jump-on-the-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/jump-on-the-bed.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-put-teddy-in-the-box.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-teddy-in-the-box.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-put-the-ball-in-the-box.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-the-ball-in-the-box.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-put-the-blocks-in-the-box.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-the-blocks-in-the-box.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-play-the-drum-boom.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/play-the-drum-boom.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-let-the-balloon-go.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/let-the-balloon-go.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-put-on-your-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-on-your-shirt.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-put-on-your-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-on-your-pants.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-put-on-your-socks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-on-your-socks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-say-goodnight-to-the-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/say-goodnight-to-the-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-make-a-wish-on-the-star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/make-a-wish-on-the-star.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-close-your-eyes-shhh.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/close-your-eyes-shhh.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/my-body.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/eye.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-see-with-my-eyes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-eye.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-eye.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-eye.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-smell-with-my-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/mouth.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-eat-with-my-mouth.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-mouth.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-mouth.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-mouth.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/ear.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-hear-with-my-ears.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-ear.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-ear.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-ear.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-wave-my-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-walk-with-my-feet.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-eye.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-eye.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-mouth.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-mouth.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-ear.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-ear.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-blink-your-eyes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/blink-your-eyes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-touch-your-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/touch-your-nose.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-open-your-mouth-aaah.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/open-your-mouth-aaah.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-listen-with-your-ears.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/listen-with-your-ears.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-wave-your-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/wave-your-hand.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-stamp-your-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/stamp-your-foot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/my-house.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/knock-knock-on-the-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-look-out-of-the-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-sit-on-a-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/we-eat-at-the-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/splash-i-take-a-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-dog-says-woof.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-cat-says-meow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/my-coat-keeps-me-warm.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-put-on-my-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-on-your-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/it-s-time-to-go-out-put-on-your-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-put-on-your-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/show-me-put-on-your-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-it-put-on-your-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-open-the-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/open-the-door.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-open-the-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/open-the-window.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-sit-on-the-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/sit-on-the-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-set-the-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/set-the-table.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-splash-in-the-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/splash-in-the-bath.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-pet-the-dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/pet-the-dog.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-pet-the-cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/pet-the-cat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-hang-up-your-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/hang-up-your-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-tie-your-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/tie-your-shoe.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-put-on-your-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/food.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/apple.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-eat-a-red-apple.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-apple.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-apple.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-apple.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-banana-is-yellow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/we-eat-bread-for-breakfast.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-drink-my-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-hen-lays-an-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/cake.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/happy-birthday-here-is-a-cake.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-cake.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-cake.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-cake.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/wash-your-hands.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/before-we-eat-wash-your-hands.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-wash-your-hands.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/show-me-wash-your-hands.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-it-wash-your-hands.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-apple.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-apple.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-cake.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-cake.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-eat-the-apple-crunch.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/eat-the-apple-crunch.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-eat-the-banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/eat-the-banana.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-eat-the-bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/eat-the-bread.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-drink-your-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/drink-your-milk.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-crack-the-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/crack-the-egg.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-eat-the-cake-yum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/eat-the-cake-yum.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-scrub-scrub-scrub.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/scrub-scrub-scrub.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/my-school.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-read-a-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-draw-with-a-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/my-bag-is-ready-for-school.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/paint.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/i-paint-a-picture.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-paint.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-paint.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-paint.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-hat-goes-on-my-head.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/take-off-your-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/we-are-inside-now-take-off-your-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-take-off-your-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/show-me-take-off-your-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-it-take-off-your-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/sit-down-please.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/story-time-sit-down-please.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-sit-down-please.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/show-me-sit-down-please.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-it-sit-down-please.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-paint.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-paint.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-open-the-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/open-the-book.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-draw-with-the-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/draw-with-the-crayon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-open-your-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/open-your-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-paint-a-picture.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/paint-a-picture.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-take-off-your-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-hang-your-hat-on-the-hook.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/hang-your-hat-on-the-hook.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-sit-down-on-the-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/sit-down-on-the-chair.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/at-the-park.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/let-s-go-to-the-park.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-sun-is-out-let-s-go-to-the-park.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-let-s-go-to-the-park.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/show-me-let-s-go-to-the-park.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-it-let-s-go-to-the-park.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-tree-is-tall.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/flower.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-flower-smells-nice.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-flower.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-flower.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-flower.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-sun-is-hot.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/drip-drop-here-comes-the-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-kite-flies-in-the-wind.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-duck-says-quack.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-fish-swims.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-cow-says-moo.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-pig-says-oink.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/a-match-pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/where-is-the-pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/you-know-the-word-pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-flower.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-flower.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/goodnight-pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/can-you-find-a-real-pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-swing-on-the-swing.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/swing-on-the-swing.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-climb-the-tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/climb-the-tree.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-smell-the-flower-mmm.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/smell-the-flower-mmm.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-hello-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/hello-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-splash-in-the-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/splash-in-the-rain.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-fly-the-kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/fly-the-kite.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-feed-the-duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/feed-the-duck.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-wave-to-the-fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/wave-to-the-fish.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-pet-the-cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/pet-the-cow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/your-turn-pet-the-pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/pet-the-pig.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/how-car-met-bus.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/this-is-car-car-is-small-and-fast-vroom.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/this-is-bus-bus-is-big-and-slow.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/oh-no-car-is-stuck-in-the-mud.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bus-says-i-can-help-you-car.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/push-push-car-is-out-of-the-mud.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/now-car-and-bus-are-best-friends-beep-beep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/ready-set-go.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/good-morning-put-on-your-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/wash-your-hands-splash-splash.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/sit-down-please-story-time.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/take-off-your-hat-time-to-sleep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/little-duck-is-lost.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/little-duck-is-lost-quack-quack.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/dog-comes-woof-where-is-your-home.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/cat-comes-meow-is-it-the-barn.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/cow-says-moo-your-home-is-the-pond.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/fish-says-hello-little-duck-is-home-hooray.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-picnic.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/we-are-going-on-a-picnic.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/apple-jumps-into-the-basket.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/banana-and-bread-jump-in-too.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/milk-and-egg-say-wait-for-us.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/and-here-comes-cake-yum-yum-picnic-time.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/ready-to-go-out.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/brrr-it-is-cold-outside.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-on-your-coat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-on-your-hat.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/put-on-your-socks-and-shoes.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/now-we-are-ready-let-s-go.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/move-your-body.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/wave-your-hand-hello.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/touch-your-nose-beep.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/stamp-your-foot-stomp-stomp.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/close-your-eyes-goodnight-body.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-toy-parade.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/drum-says-boom-boom-the-parade-begins.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/ball-bounces-boing-boing.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/teddy-dances-with-the-blocks.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/balloon-and-kite-fly-up-up-up.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/what-a-happy-parade-hooray.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/home-sweet-home.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/knock-knock-the-door-opens-hello-house.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/chair-and-table-are-ready-for-dinner.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/splash-bath-time.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-window-shows-the-moon.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bed-says-goodnight-sleep-well.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/day-and-night.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/good-morning-the-sun-comes-up.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/flower-wakes-up-hello-sun.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/oh-here-comes-the-rain-drip-drop.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-sun-goes-down.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/the-moon-and-the-star-say-goodnight.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bag-goes-to-school.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/bag-is-ready-for-school-hello-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/book-jumps-into-bag.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/crayon-jumps-in-too.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/take-off-your-hat-sit-down-please.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/we-paint-a-picture-together-hooray.m4a
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true
+- path: assets/voice/clips.js
+  origin: code
+  tool: "make-voice.mjs: macOS say -v Zoe (Premium), afconvert to AAC"
+  date: 2026-11-17
+  ships: true

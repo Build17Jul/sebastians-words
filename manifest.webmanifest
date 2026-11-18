@@ -1,0 +1,17 @@
+{
+  "name": "Sebastian's First English Words",
+  "short_name": "Sebastian's Words",
+  "description": "A calm first-words picture book with memory cards and a word album.",
+  "lang": "en",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#cfe9ff",
+  "theme_color": "#2f8f8a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
